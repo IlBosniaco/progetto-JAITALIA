@@ -39,34 +39,43 @@ function pass_Verify(){
 	}
 }
 
-$(document).ready(function() {
+/*$(document).ready(function controllo() {
     $.ajax({
         type: "GET",
-        url: "file.csv",
+        url: "data.txt",
         dataType: "text",
         success: function(data) {processData(data);}
      });
-});
+});*/
 
 function processData(allText) {
-
+	
 	//1 campo-->email
 	//2 campo-->password
     //3 campo-->nome
     //4 campo-->cognome
-    var allTextLines = allText.split(/\r\n|\n/);
-
-	var campo = allTextLines[0].split(';');
-
-	var email,password;
+    var linee = allText.split(/\r\n|\n/);
+	var controllo =false;
+	var emailinserita=document.getElementById("email").value;
+	var passwordinserita=document.getElementById("password").value;
+	for(var i=0; i<linee.length&&!controllo;i++)
+	{
+		var campo = linee[i].split(';');
+		var email=campo[0];
+		var password=campo[1];
+		if(emailinserita==email&&passwordinserita==password)
+		{
+			controllo=true;
+		}		
+	}
 	
+	if(controllo)
+	{
+		alert("valido");
+	}
+	else{
+		alert("non valido");
+	}
 	
-    while (linee.length>0) {
-        var tarr = [];
-        for (var j=0; j<record_num; j++) {
-            tarr.push(headings[j]+":"+entries.shift());
-        }
-        lines.push(tarr);
-    }
-    // alert(lines);
+    
 }
