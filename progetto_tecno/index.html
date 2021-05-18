@@ -1,27 +1,23 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Login</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="papaparse.min.js"></script>
-	<script src="valid.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script rel="text/javascript" src="valid.js"></script>
 </head>
 <body>
 	<div class="container">
 		<h1 class="label">Login Utente</h1>
 		<form class="login_form" name="form">
 			<div class="font">Email o numero di telefono</div>
-			<input autocomplete="off" type="email" name="email">
+			<input autocomplete="off" type="email" name="email" id="email">
 			<div id="email_error">Si prega di inserire email</div>
 			<div class="font font2">Password</div>
-			<input type="password" name="password">
+			<input type="password" name="password" id="pssw">
 			<div id="pass_error">Si prega di inserire la password</div>
-			<button type="submit" onclick="controllo()">Login</button>
-			<button type="submit">Registrati</button>
+			<input type="button" id="btnAccedi" value="Accedi">
+			<input type="button" id="btnRegistrati" value="Registrati">
 		</form>
 	</div>	
 	
