@@ -1,3 +1,32 @@
-.li {
+html{
+    background-color: darkkhaki;
+}
+p{
+    font-size: 70%;
+}
+.nav-item{
     padding: 10px;
+}
+form{
+    background-color: darkorange;
+}
+input{
+    border-style: none;
+}
+.btnAcquista{
+    border-color: chartreuse;
+	font-size: 20px;
+	color: white;
+	background: #2967f5;
+	border-radius: 5px;
+	border: 1px solid #2967f5;
+}
+.quantita{
+    width: 50px;
+}
+.nomeCognome{
+    float:right;
+}
+.card-img-top{
+    height: 300px;
 }
