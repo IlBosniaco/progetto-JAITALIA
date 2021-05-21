@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="carrello.js"> </script>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -62,7 +63,7 @@
               <h5 class="card-title">Panzerotto</h5>
               <p class="card-text">piatto salato composto da un involucro di pasta da pizza,
                 farcito al suo interno con mozzarella, pomodoro e prosciutto cotto </p>
-              <h7>Quantita:<input class="quantita" type="number" value="0"><input class="btnAcquista" type="button" value="aggiungi" id="idPanzerotto"></h7>
+              <h7>Quantita:<input class="quantita" type="number" value="0" id="idPanzerotto"><input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiPanzerotto()"></h7>
               <br><br>
               <h6 class="card-title">Costo:2€</h6>
             </div>
@@ -76,8 +77,8 @@
               <h5 class="card-title">Pizza</h5>
               <p class="card-text">La pizza al trancio è un impasto alto e molto morbido farcito
                 con pomodoro, origano e tanta mozzarella. </p>
-                <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-              <input class="btnAcquista" type="button" value="aggiungi" id="idPizza"><br><br>
+                <h7>Quantita:<input class="quantita" id="idPizza" type="number" value="0"></h7>
+              <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiPizza()" ><br><br>
               <h6 class="card-title">Costo:1€</h6>
             </div>
           </div>
@@ -85,13 +86,13 @@
         <!--panzerotto1.5-->
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./images/panzerotto1,5.jpg" height="200" class="card-img-top" alt="...">
+            <img src="./images/panzerotto1_5.jpg" height="200" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Panzerotto mini</h5>
               <p class="card-text">piatto salato composto da un involucro di pasta da pizza,
                 farcito al suo interno con wurstel e salsa di pomodoro </p>
-                <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-                <input class="btnAcquista" type="button" value="aggiungi" id="idPanzerottojr"><br><br>
+                <h7>Quantita:<input class="quantita"  id="idPanzerottojr" type="number" value="0"></h7>
+                <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiPanzerottojr()"><br><br>
                 <h6 class="card-title">Costo:1.5€</h6>
             </div>
           </div>
@@ -105,8 +106,8 @@
               <h5 class="card-title">Piadina</h5>
               <p class="card-text">Piadina farcita con prosciutto cotto, mozzarella e pomodoro.
                 Una ricetta light, molto semplice ma deliziosa. </p>
-                <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-                <input class="btnAcquista" type="button" value="aggiungi" id="idPiadina"><br><br>
+                <h7>Quantita:<input class="quantita" type="number" value="0" id="idPiadina"></h7>
+                <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiPiadina()"><br><br>
                 <h6 class="card-title">Costo:1.5€</h6>
             </div>
           </div>
@@ -119,8 +120,8 @@
             <div class="card-body">
               <h5 class="card-title">Panino</h5>
               <p class="card-text">Panino croccante con all'interno una deliziosa cotoletta </p>
-              <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-                <input class="btnAcquista" type="button" value="aggiungi" id="idPanino"><br><br>
+              <h7>Quantita:<input class="quantita" type="number" value="0" id="idPanino"></h7>
+                <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiPanino()"><br><br>
                 <h6 class="card-title">Costo:2€</h6>
             </div>
           </div>
@@ -133,8 +134,8 @@
             <div class="card-body">
               <h5 class="card-title">Patatine</h5>
               <p class="card-text">snack salato al gusto classico </p>
-              <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-              <input class="btnAcquista" type="button" value="aggiungi" id="idPatatine"><br><br>
+              <h7>Quantita:<input class="quantita" type="number" value="0" id="idPatatine"></h7>
+              <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiPatatine()"><br><br>
               <h6 class="card-title">Costo:1€</h6>
             </div>
           </div>
@@ -147,8 +148,8 @@
             <div class="card-body">
               <h5 class="card-title">Acqua Naturale</h5>
               <p class="card-text"> </p>
-              <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-              <input class="btnAcquista" type="button" value="aggiungi" id="idAcquaN"><br><br>
+              <h7>Quantita:<input class="quantita" type="number" value="0" id="idAcquaN"></h7>
+              <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiAcquaN()"><br><br>
               <h6 class="card-title">Costo:1€</h6>
             </div>
           </div>
@@ -161,8 +162,8 @@
             <div class="card-body">
               <h5 class="card-title">Acqua Frizzante</h5>
               <p class="card-text"> </p>
-              <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-              <input class="btnAcquista" type="button" value="aggiungi" id="idAcquaF"><br><br>
+              <h7>Quantita:<input class="quantita" type="number" value="0" id="idAcquaF"></h7>
+              <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiAcquaF()"><br><br>
               <h6 class="card-title">Costo:1€</h6>
             </div>
           </div>
@@ -171,12 +172,12 @@
         <!--cola-->
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="./images/coca cola.jpg" height="200" class="card-img-top" alt="...">
+            <img src="./images/coca_cola.png" height="200" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Coca Cola</h5>
               <p class="card-text">Bevanda zuccherata ottima per chi ha bisogno di recuperare energie </p>
-              <h7>Quantita:<input class="quantita" type="number" value="0"></h7>
-              <input class="btnAcquista" type="button" value="aggiungi" id="idPatatine"><br><br>
+              <h7>Quantita:<input class="quantita" type="number" value="0"  id="idCola"></h7>
+              <input class="btnAcquista" type="button" value="aggiungi" onclick="aggiungiCola()"><br><br>
               <h6 class="card-title">Costo:1€</h6>
             </div>
           </div>
