@@ -1,0 +1,37 @@
+html{
+    background-image: url("SfondoRistorante.png");
+    zoom: 1.15;
+}
+.fieldset {
+    background-color: #F2FFB6;
+    text-align: center;
+margin-left: 400px;
+    width: 300px;
+}
+h1{
+    font-size: 30px;
+}
+.txt{
+    width: 290px;
+}
+.scrittaPagina2{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.accedi{
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.textNome{
+margin-left: 54px;
+width: 100;
+}
+.textCognome{
+    margin-left: -30px;
+    width: 100;
+}
+.allinea{
+    display: inline;
+}
