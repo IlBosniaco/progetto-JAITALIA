@@ -19,15 +19,61 @@ namespace Applicazione_Utente
     /// </summary>
     public partial class Ordinanzione : Window
     {
-        COrdinazioni c = new COrdinazioni();
+        Utenti c = new Utenti();
         public Ordinanzione()
         {
             InitializeComponent();
         }
 
-        public Ordinanzione(COrdinazioni c)
+        public Ordinanzione(Utenti l)
         {
             InitializeComponent();
+            c = l;
+        }
+
+        private void btnOut_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnOrdina_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPa_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCr_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnGo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPa1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnFo_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

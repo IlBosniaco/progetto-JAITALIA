@@ -19,13 +19,13 @@ namespace Applicazione_Utente
     /// </summary>
     public partial class Register : Window
     {
-        COrdinazioni c = new COrdinazioni();
+        Utenti c = new Utenti();
         public Register()
         {
             InitializeComponent();
         }
 
-        public Register(COrdinazioni t)
+        public Register(Utenti t)
         {
             InitializeComponent();
             c = t;
@@ -33,15 +33,19 @@ namespace Applicazione_Utente
 
         private void btnRegistrati_Click(object sender, RoutedEventArgs e)
         {
-            if(txtPssw.ToString()!=txtCognome.ToString())
+            if(txtPssw.Password!=txtConferma.Password)
             {
                 MessageBox.Show("la conferma è diversa dalla password inserita");
             }
-            else if (c.controlloR(txtMail.ToString()))
+            else if (c.controlloR(txtMail.Text))
             {
-                COrdine o = new COrdine(null, txtNome.ToString(), txtCognome.ToString(), txtMail.ToString(), txtPssw.ToString());
+                Utente o = new Utente(txtNome.Text, txtCognome.Text, txtMail.Text, txtPssw.Password);
                 c.AggiungiUtente(o);
+                c.Salva();
+                MessageBox.Show("account creato");
                 Ordinanzione tmp = new Ordinanzione(c);
+                this.Hide();
+                tmp.Show();
             }
             else
                 MessageBox.Show("questa mail è già in uso");

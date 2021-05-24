@@ -55,8 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="COrdinazioni.cs" />
     <Compile Include="COrdine.cs" />
+    <Compile Include="Utenti.cs" />
+    <Compile Include="Utente.cs" />
     <Compile Include="Ordinanzione.xaml.cs">
       <DependentUpon>Ordinanzione.xaml</DependentUpon>
     </Compile>

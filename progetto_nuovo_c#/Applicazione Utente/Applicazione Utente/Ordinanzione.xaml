@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Applicazione_Utente"
         mc:Ignorable="d"
-        Title="Ordinanzione" Height="450" Width="800">
+        Title="Ordinanzione" Height="500" Width="1000">
     <Grid>
-        
+        <Button x:Name="btnPa" Content="panzerotto" HorizontalAlignment="Left" Margin="105,149,0,0" VerticalAlignment="Top" Width="75" Click="btnPa_Click"/>
+        <Button x:Name="btnFo" Content="focaccia" HorizontalAlignment="Left" Margin="267,309,0,0" VerticalAlignment="Top" Width="75" Click="btnFo_Click"/>
+        <Button x:Name="btnCr" Content="croccantelle" HorizontalAlignment="Left" Margin="105,233,0,0" VerticalAlignment="Top" Width="75" Click="btnCr_Click"/>
+        <Button x:Name="btnDelete" Content="rimuovi" HorizontalAlignment="Left" Margin="489,425,0,0" VerticalAlignment="Top" Width="219" Click="btnDelete_Click"/>
+        <Button x:Name="btnGo" Content="goleador" HorizontalAlignment="Left" Margin="267,233,0,0" VerticalAlignment="Top" Width="75" Click="btnGo_Click"/>
+        <Button x:Name="btnPi" Content="pizza" HorizontalAlignment="Left" Margin="267,149,0,0" VerticalAlignment="Top" Width="75" Click="btnPi_Click"/>
+        <Button x:Name="btnPa1" Content="patatine" HorizontalAlignment="Left" Margin="105,309,0,0" VerticalAlignment="Top" Width="75" Click="btnPa1_Click"/>
+        <Button x:Name="btnOut" Content="log out" HorizontalAlignment="Left" Margin="909,10,0,0" VerticalAlignment="Top" Width="75" Click="btnOut_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="lista ordinazioni" VerticalAlignment="Top" Width="289" Height="52" FontSize="40"/>
+        <TextBlock HorizontalAlignment="Left" Margin="489,85,0,0" TextWrapping="Wrap" Text="carrello" VerticalAlignment="Top"/>
+        <ListView HorizontalAlignment="Left" Height="317" Margin="489,103,0,0" VerticalAlignment="Top" Width="219">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="603,85,0,0" TextWrapping="Wrap" Text="totale:" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="btnOrdina" Content="ordina" HorizontalAlignment="Left" Margin="898,401,0,0" VerticalAlignment="Top" Width="86" Height="59" Click="btnOrdina_Click"/>
+
     </Grid>
 </Window>

@@ -20,16 +20,16 @@ namespace Applicazione_Utente
     /// </summary>
     public partial class MainWindow : Window
     {
-        COrdinazioni c = new COrdinazioni();
+        Utenti c = new Utenti();
         
         public MainWindow()
         {
             InitializeComponent();
-            c.setNomeFile("dati.csv");
+            c.setNomeFile(@"C:\Users\Matteo\Desktop\scuola matteo\4°B INF\superenalotto\compraBiglietto\dati.csv");
             c.Carica();
         }
 
-        public MainWindow(COrdinazioni t)
+        public MainWindow(Utenti t)
         {
             InitializeComponent();
             c = t;
@@ -37,11 +37,14 @@ namespace Applicazione_Utente
 
         private void btnAccedi_Click(object sender, RoutedEventArgs e)
         {
-            if (c.controllo(txtMail.ToString(), txtPssw.ToString()))
+            if (c.controllo(txtMail.Text, txtPssw.Password)!=null)
             {
                 Ordinanzione tmp = new Ordinanzione(c);
+                this.Hide();
+                tmp.Show();
             }
-            MessageBox.Show("credenziali sbagliate");
+            else
+                MessageBox.Show("credenziali sbagliate");
         }
 
         private void btnRegistrati_Click(object sender, RoutedEventArgs e)
