@@ -10,15 +10,18 @@ namespace Applicazione_Utente
     public class COrdine
     {
         List<string> lista;
+        double prezzo;
 
         public COrdine()
         {
             lista = new List<string>();
+            prezzo = 0;
         }
 
-        public COrdine(List<string> l)
+        public COrdine(List<string> l, double p)
         {
             lista = l;
+            prezzo = p;
         }
 
         public List<string> getLista()
@@ -26,19 +29,26 @@ namespace Applicazione_Utente
             return lista;
         }
 
-        public void aggiungi(string n)
+        public void aggiungi(string n, double p)
         {
             lista.Add(n);
+            prezzo += p;
         }
 
         public void cancella(int i)
         {
             lista.RemoveAt(i);
+            
+        }
+
+        public double getPrezzo()
+        {
+            return prezzo;
         }
 
         public void Salva()
         {
-            File.AppendAllText("path", ToCsv());
+            File.AppendAllText(@"C:\Users\Matteo\Desktop\Applicazione Utente\ordini.csv", ToCsv());
         }
 
         public string ToCsv()

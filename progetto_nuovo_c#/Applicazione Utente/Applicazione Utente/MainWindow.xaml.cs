@@ -25,7 +25,7 @@ namespace Applicazione_Utente
         public MainWindow()
         {
             InitializeComponent();
-            c.setNomeFile(@"C:\Users\Matteo\Desktop\scuola matteo\4°B INF\superenalotto\compraBiglietto\dati.csv");
+            c.setNomeFile(@"C:\Users\Matteo\Desktop\Applicazione Utente\dati.csv");
             c.Carica();
         }
 

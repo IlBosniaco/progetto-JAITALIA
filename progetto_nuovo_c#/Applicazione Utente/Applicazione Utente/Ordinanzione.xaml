@@ -17,7 +17,7 @@
         <Button x:Name="btnOut" Content="log out" HorizontalAlignment="Left" Margin="909,10,0,0" VerticalAlignment="Top" Width="75" Click="btnOut_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="lista ordinazioni" VerticalAlignment="Top" Width="289" Height="52" FontSize="40"/>
         <TextBlock HorizontalAlignment="Left" Margin="489,85,0,0" TextWrapping="Wrap" Text="carrello" VerticalAlignment="Top"/>
-        <ListView HorizontalAlignment="Left" Height="317" Margin="489,103,0,0" VerticalAlignment="Top" Width="219">
+        <ListView x:Name="lst" HorizontalAlignment="Left" Height="317" Margin="489,103,0,0" VerticalAlignment="Top" Width="219">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
