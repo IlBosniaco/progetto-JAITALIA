@@ -7,25 +7,47 @@
         mc:Ignorable="d"
         Title="Ordinanzione" Height="500" Width="1000">
     <Grid>
-        <Button x:Name="btnPa" Content="panzerotto" HorizontalAlignment="Left" Margin="105,149,0,0" VerticalAlignment="Top" Width="75" Click="btnPa_Click"/>
-        <Button x:Name="btnFo" Content="focaccia" HorizontalAlignment="Left" Margin="267,309,0,0" VerticalAlignment="Top" Width="75" Click="btnFo_Click"/>
-        <Button x:Name="btnCr" Content="croccantelle" HorizontalAlignment="Left" Margin="105,233,0,0" VerticalAlignment="Top" Width="75" Click="btnCr_Click"/>
-        <Button x:Name="btnDelete" Content="rimuovi" HorizontalAlignment="Left" Margin="489,425,0,0" VerticalAlignment="Top" Width="219" Click="btnDelete_Click"/>
-        <Button x:Name="btnGo" Content="goleador" HorizontalAlignment="Left" Margin="267,233,0,0" VerticalAlignment="Top" Width="75" Click="btnGo_Click"/>
-        <Button x:Name="btnPi" Content="pizza" HorizontalAlignment="Left" Margin="267,149,0,0" VerticalAlignment="Top" Width="75" Click="btnPi_Click"/>
-        <Button x:Name="btnPa1" Content="patatine" HorizontalAlignment="Left" Margin="105,309,0,0" VerticalAlignment="Top" Width="75" Click="btnPa1_Click"/>
-        <Button x:Name="btnOut" Content="log out" HorizontalAlignment="Left" Margin="909,10,0,0" VerticalAlignment="Top" Width="75" Click="btnOut_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="lista ordinazioni" VerticalAlignment="Top" Width="289" Height="52" FontSize="40"/>
-        <TextBlock HorizontalAlignment="Left" Margin="489,85,0,0" TextWrapping="Wrap" Text="carrello" VerticalAlignment="Top"/>
-        <ListView x:Name="lst" HorizontalAlignment="Left" Height="317" Margin="489,103,0,0" VerticalAlignment="Top" Width="219">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="763*"/>
+            <ColumnDefinition Width="230*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="SfondoRistorante.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+
+        <Button x:Name="btnPa" Content="panzerotto" HorizontalAlignment="Left" Margin="85,81,0,0" VerticalAlignment="Top" Width="116" Click="btnPa_Click" Background="#FF00FF23"/>
+        <Button x:Name="btnFo" Content="focaccia" HorizontalAlignment="Left" Margin="242,324,0,0" VerticalAlignment="Top" Width="118" Click="btnFo_Click" Background="#FF00FF23"/>
+        <Button x:Name="btnCr" Content="croccantelle" HorizontalAlignment="Left" Margin="83,208,0,0" VerticalAlignment="Top" Width="118" Click="btnCr_Click" RenderTransformOrigin="-0.11,0.55" Background="#FF00FF23"/>
+        <Button x:Name="btnDelete" Content="rimuovi" HorizontalAlignment="Left" Margin="443,425,0,0" VerticalAlignment="Top" Width="265" Click="btnDelete_Click" Height="34" FontSize="18" Background="#FF00FF23"/>
+        <Button x:Name="btnGo" Content="goleador" HorizontalAlignment="Left" Margin="242,208,0,0" VerticalAlignment="Top" Width="118" Click="btnGo_Click" Background="#FF00FF23"/>
+        <Button x:Name="btnPi" Content="pizza" HorizontalAlignment="Left" Margin="242,81,0,0" VerticalAlignment="Top" Width="118" Click="btnPi_Click" Background="#FF00FF23"/>
+        <Button x:Name="btnPa1" Content="patatine" HorizontalAlignment="Left" Margin="85,324,0,0" VerticalAlignment="Top" Width="116" Click="btnPa1_Click" Background="#FF00FF23"/>
+        <Button x:Name="btnOut" Content="log out" HorizontalAlignment="Left" Margin="136,19,0,0" VerticalAlignment="Top" Width="84" Click="btnOut_Click" Grid.Column="1" Background="#FF00FF23" Height="29" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="72,5,0,0" TextWrapping="Wrap" Text="lista ordinazioni" VerticalAlignment="Top" Width="310" Height="52" FontSize="40" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="443,56,0,0" TextWrapping="Wrap" Text="carrello" VerticalAlignment="Top" Width="134" Height="20" FontSize="18"/>
+        <ListView x:Name="lst" HorizontalAlignment="Left" Height="339" Margin="443,81,0,0" VerticalAlignment="Top" Width="265">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBlock HorizontalAlignment="Left" Margin="603,85,0,0" TextWrapping="Wrap" Text="totale:" VerticalAlignment="Top" Width="105"/>
-        <Button x:Name="btnOrdina" Content="ordina" HorizontalAlignment="Left" Margin="898,401,0,0" VerticalAlignment="Top" Width="86" Height="59" Click="btnOrdina_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="582,56,0,0" TextWrapping="Wrap" Text="totale:" VerticalAlignment="Top" Width="126" Height="20" FontSize="18"/>
+        <Button x:Name="btnOrdina" Content="ordina" HorizontalAlignment="Left" Margin="135.5,401,0,0" VerticalAlignment="Top" Width="86" Height="59" Click="btnOrdina_Click" Grid.Column="1" Background="#FF00FF23" FontSize="18"/>
+        <Image Margin="91,106,582,280" Source="panzerotto1_5.jpg" Stretch="Fill"/>
+        <Image Margin="253,106,420,280" Source="pizza.jpg" Stretch="Fill"/>
+        <Image Margin="253,233,420,150" Source="goleador.jpg" Stretch="Fill" RenderTransformOrigin="1.083,-1.105"/>
+        <Image Margin="91,349,582,30" Source="patatine.jpg" Stretch="Fill"/>
+        <Image Margin="91,233,582,148" Source="croccantelle.jpg" Stretch="Fill"/>
+        <Image Margin="253,349,420,30" Source="focaccia.jpg" Stretch="Fill"/>
+        <Image Margin="54,209,-106,198" Source="logo_nainsob.jpeg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="89.992"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>
