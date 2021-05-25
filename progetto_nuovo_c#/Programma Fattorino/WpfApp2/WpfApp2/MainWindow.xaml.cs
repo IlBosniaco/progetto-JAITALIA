@@ -37,7 +37,7 @@ namespace WpfApp2
             {
                 MessageBox.Show("PASSWORD CORRETTA");
 
-                FinestraControlloQR tmp = new FinestraControlloQR();
+                Main tmp = new Main();
                 this.Hide();
                 tmp.Show();
 

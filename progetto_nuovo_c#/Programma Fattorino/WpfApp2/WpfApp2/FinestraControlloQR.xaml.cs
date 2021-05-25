@@ -19,9 +19,15 @@ namespace WpfApp2
     /// </summary>
     public partial class FinestraControlloQR : Window
     {
+        COrdinazioni ordinazioni = new COrdinazioni();
         public FinestraControlloQR()
         {
             InitializeComponent();
+        }
+        public FinestraControlloQR(COrdinazioni o)
+        {
+            InitializeComponent();
+            ordinazioni = o;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -33,13 +39,43 @@ namespace WpfApp2
         private void QrWebCamControl_QrDecoded(object sender, string e)
         {
             //mette la scritta presente nel qr nella textbox  sottostante
-            dtext.Text = e;
+            qrBox.Text= e;
+            
         }
-
         private void camSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //quando seleziono una camera dalla combo prende la posizione della camera che scelgo (es ho una camera prende l'indice 0)
             webCam.CameraIndex = camSelect.SelectedIndex;
+        }
+
+        private void btnMain1_Click(object sender, RoutedEventArgs e)
+        {
+            Main tmp = new Main(ordinazioni);
+            this.Hide();
+            tmp.Show();
+        }
+
+        private void btnConferma_Click(object sender, RoutedEventArgs e)
+        {
+            bool trovato = false;
+            for (int i = 0; i < ordinazioni.numEl; i++)
+            {
+                if (ordinazioni.GetElemento(i) == qrBox.Text)
+                {
+                    ordinazioni.rimuoviOrdine(i);
+                    trovato = true;
+                    ordinazioni.numEl--;//diminuisco numEl
+                    ordinazioni.Salva();
+                }
+            }
+            if(trovato)
+            {
+                lblConferma.Content = "QR VALIDO";
+            }
+            else
+            {
+                lblConferma.Content = "QR NON VALIDO";
+            }
         }
     }   
 }

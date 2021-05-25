@@ -6,11 +6,14 @@
         xmlns:local="clr-namespace:WpfApp2"
         xmlns:qwc="clr-namespace:QrWebCam;assembly=QrWebCam"
         mc:Ignorable="d"
-        Title="FinestraControlloQR" Height="450" Width="800">
-    <Grid>
-        <ComboBox x:Name="camSelect" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Margin="675,40,66.6,358" Height="22" SelectionChanged="camSelect_SelectionChanged" Width="52" />
-        <qwc:QrWebCamControl Loaded="Window_Loaded" x:Name="webCam" QrDecoded="QrWebCamControl_QrDecoded" Margin="324,62,66.6,102" />
-        <TextBox x:Name="dtext" HorizontalAlignment="Left" Height="177" Margin="85,141,0,0" TextWrapping="Wrap" Text="boh" VerticalAlignment="Top" Width="141"/>
+        Title="FinestraControlloQR" Height="419.6" Width="356">
+    <Grid x:Name="btnMain" Margin="0,0,3.6,-0.4">
+        <ComboBox x:Name="camSelect" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Margin="259,37,10,332" Height="21" SelectionChanged="camSelect_SelectionChanged" Width="77" />
+        <qwc:QrWebCamControl Loaded="Window_Loaded" x:Name="webCam" QrDecoded="QrWebCamControl_QrDecoded" Margin="17,63,10,157" />
+        <Button x:Name="btnMain1" Content="MAIN" HorizontalAlignment="Left" Margin="243,361,0,0" VerticalAlignment="Top" Width="75" Click="btnMain1_Click"/>
+        <Button x:Name="btnConferma" Content="CONFERMA" HorizontalAlignment="Left" Margin="50,293,0,0" VerticalAlignment="Top" Width="75" Click="btnConferma_Click"/>
+        <Label x:Name="lblConferma" Content="Label" HorizontalAlignment="Left" Margin="202,238,0,0" VerticalAlignment="Top" Height="50" Width="77"/>
+        <TextBox x:Name="qrBox" HorizontalAlignment="Left" Height="24" Margin="50,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
 
     </Grid>
 </Window>

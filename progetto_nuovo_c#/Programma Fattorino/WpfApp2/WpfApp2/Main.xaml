@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp2.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Main" Height="427.6" Width="505.6">
+    <Grid>
+        <Button x:Name="btnVisualizza" Content="VISUALIZZA &#xD;&#xA;ORDINAZIONI" HorizontalAlignment="Left" Margin="178,80,0,0" VerticalAlignment="Top" Width="116" Height="50" Click="btnVisualizza_Click"/>
+        <Button x:Name="btnScanerizza" Content="SCANNERIZZA &#xD;&#xA;QR CODE" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" Width="116" Height="50" Click="btnScanerizza_Click"/>
+
+    </Grid>
+</Window>

@@ -82,7 +82,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="COrdinazione.cs" />
     <Page Include="FinestraControlloQR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinestraVisualizza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,8 +103,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="COrdinazioni.cs" />
     <Compile Include="FinestraControlloQR.xaml.cs">
       <DependentUpon>FinestraControlloQR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinestraVisualizza.xaml.cs">
+      <DependentUpon>FinestraVisualizza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
