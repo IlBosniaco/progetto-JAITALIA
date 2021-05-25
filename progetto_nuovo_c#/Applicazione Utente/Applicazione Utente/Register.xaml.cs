@@ -72,5 +72,10 @@ namespace Applicazione_Utente
             this.Hide();
             tmp.Show();
         }
+
+        private void txtMail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

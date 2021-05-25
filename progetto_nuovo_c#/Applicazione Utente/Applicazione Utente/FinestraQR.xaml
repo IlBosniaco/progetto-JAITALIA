@@ -7,9 +7,20 @@
         mc:Ignorable="d"
         Title="FinestraQR" Height="450" Width="506.356">
     <Grid>
-        <Image x:Name="imgQR" HorizontalAlignment="Left" Height="208" Margin="119,103,0,0" VerticalAlignment="Top" Width="223"/>
-        <Label Content="QUESTO E' IL TUO QR CODE CHE DOVRA ISARE AL MOMENTO DEL PAGAMENTO" HorizontalAlignment="Left" Margin="40,51,0,0" VerticalAlignment="Top" Height="27" Width="474"/>
-        <Button x:Name="btnMenu" Content="TORNA AL MENU" HorizontalAlignment="Left" Margin="136,346,0,0" VerticalAlignment="Top" Width="140" Height="32" RenderTransformOrigin="-0.591,0.637" Click="btnMenu_Click"/>
+        <Image Source="SfondoRistorante.png" Stretch="Fill"/>
+
+        <Image x:Name="imgQR" HorizontalAlignment="Left" Height="208" Margin="149,95,0,0" VerticalAlignment="Top" Width="223"/>
+        <Label Content="QUESTO E' IL TUO QR CODE CHE DOVRA &#xD;&#xA;USARE AL MOMENTO DEL PAGAMENTO" Margin="76,23,62,0" VerticalAlignment="Top" Height="62" Background="#FF74FF00" FontSize="18" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.063"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btnMenu" Content="TORNA AL MENU" HorizontalAlignment="Left" Margin="149,341,0,0" VerticalAlignment="Top" Width="223" Height="32" RenderTransformOrigin="-0.591,0.637" Click="btnMenu_Click" Background="#FF74FF00" FontSize="18"/>
 
     </Grid>
 </Window>

@@ -41,7 +41,7 @@ namespace Applicazione_Utente {
     public partial class FinestraQR : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 10 "..\..\FinestraQR.xaml"
+        #line 12 "..\..\FinestraQR.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image imgQR;
         
@@ -49,7 +49,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 12 "..\..\FinestraQR.xaml"
+        #line 23 "..\..\FinestraQR.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnMenu;
         
@@ -92,7 +92,7 @@ namespace Applicazione_Utente {
             case 2:
             this.btnMenu = ((System.Windows.Controls.Button)(target));
             
-            #line 12 "..\..\FinestraQR.xaml"
+            #line 23 "..\..\FinestraQR.xaml"
             this.btnMenu.Click += new System.Windows.RoutedEventHandler(this.btnMenu_Click);
             
             #line default

@@ -107,22 +107,6 @@ namespace Applicazione_Utente {
         
         #line 24 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btnAccedi1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 25 "..\..\Register.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btnRegistrati1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 27 "..\..\Register.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ComboBox cmbAnno;
         
         #line default
@@ -195,24 +179,6 @@ namespace Applicazione_Utente {
             this.cmbSezione = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 9:
-            this.btnAccedi1 = ((System.Windows.Controls.Button)(target));
-            
-            #line 24 "..\..\Register.xaml"
-            this.btnAccedi1.Click += new System.Windows.RoutedEventHandler(this.btnAccedi_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 10:
-            this.btnRegistrati1 = ((System.Windows.Controls.Button)(target));
-            
-            #line 25 "..\..\Register.xaml"
-            this.btnRegistrati1.Click += new System.Windows.RoutedEventHandler(this.btnRegistrati_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 11:
             this.cmbAnno = ((System.Windows.Controls.ComboBox)(target));
             return;
             }
