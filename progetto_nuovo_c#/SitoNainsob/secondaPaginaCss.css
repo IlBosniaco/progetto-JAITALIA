@@ -1,0 +1,21 @@
+.par{
+    margin-left: 76px;
+    width: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.img1{
+    width: 300px;
+    margin-left: 750px;
+    margin-top: -350;
+}
+.img2{
+    width: 300px;
+    margin-left: 750px;
+    margin-top: -150;
+}
+.accordion{
+    width: 500px;
+    margin-left: 350px;
+    margin-top: -323;
+}
