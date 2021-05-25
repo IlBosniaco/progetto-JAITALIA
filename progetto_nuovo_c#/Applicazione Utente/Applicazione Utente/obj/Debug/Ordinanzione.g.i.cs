@@ -41,7 +41,7 @@ namespace Applicazione_Utente {
     public partial class Ordinanzione : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 10 "..\..\Ordinanzione.xaml"
+        #line 16 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnPa;
         
@@ -49,7 +49,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 11 "..\..\Ordinanzione.xaml"
+        #line 17 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnFo;
         
@@ -57,7 +57,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 12 "..\..\Ordinanzione.xaml"
+        #line 18 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnCr;
         
@@ -65,7 +65,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 13 "..\..\Ordinanzione.xaml"
+        #line 19 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnDelete;
         
@@ -73,7 +73,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 14 "..\..\Ordinanzione.xaml"
+        #line 20 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnGo;
         
@@ -81,7 +81,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 15 "..\..\Ordinanzione.xaml"
+        #line 21 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnPi;
         
@@ -89,7 +89,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 16 "..\..\Ordinanzione.xaml"
+        #line 22 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnPa1;
         
@@ -97,7 +97,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 17 "..\..\Ordinanzione.xaml"
+        #line 23 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnOut;
         
@@ -105,7 +105,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 20 "..\..\Ordinanzione.xaml"
+        #line 26 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListView lst;
         
@@ -113,7 +113,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 28 "..\..\Ordinanzione.xaml"
+        #line 34 "..\..\Ordinanzione.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnOrdina;
         
@@ -153,7 +153,7 @@ namespace Applicazione_Utente {
             case 1:
             this.btnPa = ((System.Windows.Controls.Button)(target));
             
-            #line 10 "..\..\Ordinanzione.xaml"
+            #line 16 "..\..\Ordinanzione.xaml"
             this.btnPa.Click += new System.Windows.RoutedEventHandler(this.btnPa_Click);
             
             #line default
@@ -162,7 +162,7 @@ namespace Applicazione_Utente {
             case 2:
             this.btnFo = ((System.Windows.Controls.Button)(target));
             
-            #line 11 "..\..\Ordinanzione.xaml"
+            #line 17 "..\..\Ordinanzione.xaml"
             this.btnFo.Click += new System.Windows.RoutedEventHandler(this.btnFo_Click);
             
             #line default
@@ -171,7 +171,7 @@ namespace Applicazione_Utente {
             case 3:
             this.btnCr = ((System.Windows.Controls.Button)(target));
             
-            #line 12 "..\..\Ordinanzione.xaml"
+            #line 18 "..\..\Ordinanzione.xaml"
             this.btnCr.Click += new System.Windows.RoutedEventHandler(this.btnCr_Click);
             
             #line default
@@ -180,7 +180,7 @@ namespace Applicazione_Utente {
             case 4:
             this.btnDelete = ((System.Windows.Controls.Button)(target));
             
-            #line 13 "..\..\Ordinanzione.xaml"
+            #line 19 "..\..\Ordinanzione.xaml"
             this.btnDelete.Click += new System.Windows.RoutedEventHandler(this.btnDelete_Click);
             
             #line default
@@ -189,7 +189,7 @@ namespace Applicazione_Utente {
             case 5:
             this.btnGo = ((System.Windows.Controls.Button)(target));
             
-            #line 14 "..\..\Ordinanzione.xaml"
+            #line 20 "..\..\Ordinanzione.xaml"
             this.btnGo.Click += new System.Windows.RoutedEventHandler(this.btnGo_Click);
             
             #line default
@@ -198,7 +198,7 @@ namespace Applicazione_Utente {
             case 6:
             this.btnPi = ((System.Windows.Controls.Button)(target));
             
-            #line 15 "..\..\Ordinanzione.xaml"
+            #line 21 "..\..\Ordinanzione.xaml"
             this.btnPi.Click += new System.Windows.RoutedEventHandler(this.btnPi_Click);
             
             #line default
@@ -207,7 +207,7 @@ namespace Applicazione_Utente {
             case 7:
             this.btnPa1 = ((System.Windows.Controls.Button)(target));
             
-            #line 16 "..\..\Ordinanzione.xaml"
+            #line 22 "..\..\Ordinanzione.xaml"
             this.btnPa1.Click += new System.Windows.RoutedEventHandler(this.btnPa1_Click);
             
             #line default
@@ -216,7 +216,7 @@ namespace Applicazione_Utente {
             case 8:
             this.btnOut = ((System.Windows.Controls.Button)(target));
             
-            #line 17 "..\..\Ordinanzione.xaml"
+            #line 23 "..\..\Ordinanzione.xaml"
             this.btnOut.Click += new System.Windows.RoutedEventHandler(this.btnOut_Click);
             
             #line default
@@ -228,7 +228,7 @@ namespace Applicazione_Utente {
             case 10:
             this.btnOrdina = ((System.Windows.Controls.Button)(target));
             
-            #line 28 "..\..\Ordinanzione.xaml"
+            #line 34 "..\..\Ordinanzione.xaml"
             this.btnOrdina.Click += new System.Windows.RoutedEventHandler(this.btnOrdina_Click);
             
             #line default
