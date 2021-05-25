@@ -84,7 +84,9 @@ namespace Applicazione_Utente
         {
             for(int i=0;i<lista.Count;i++)
             {
-                if (lista.ElementAt(i).getMail() == m && lista.ElementAt(i).getPassword() == p)
+                string mail = lista.ElementAt(i).getMail().ToString();
+                string passw = lista.ElementAt(i).getPassword().ToString();
+                if (mail == m && passw == p)
                     return i;
             }
             return -1;

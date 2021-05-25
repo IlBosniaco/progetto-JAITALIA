@@ -17,3 +17,30 @@ C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\Applic
 C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.CoreCompileInputs.cache
 C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.exe
 C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.pdb
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\Applicazione Utente.exe.config
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\Applicazione Utente.exe
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\Applicazione Utente.pdb
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\QRCoder.dll
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csprojAssemblyReference.cache
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.g.cs
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\MainWindow.g.cs
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Ordinanzione.g.cs
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Register.g.cs
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\App.g.cs
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente_MarkupCompile.cache
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente_MarkupCompile.lref
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.baml
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\MainWindow.baml
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Ordinanzione.baml
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Register.baml
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.g.resources
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione_Utente.Properties.Resources.resources
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.GenerateResource.cache
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.CoreCompileInputs.cache
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.CopyComplete
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.exe
+E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.pdb
+C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\bin\Debug\QRCoder.dll
+C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.g.cs
+C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.baml
+C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.CopyComplete

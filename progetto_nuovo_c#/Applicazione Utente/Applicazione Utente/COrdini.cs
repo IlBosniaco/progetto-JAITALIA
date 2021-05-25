@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace Applicazione_Utente
 {
+    [Serializable]
     public class COrdini
     {
         List<COrdine> lista;
-
+        string ordinazione;
         public COrdini()
         {
             lista = new List<COrdine>();
@@ -59,8 +60,18 @@ namespace Applicazione_Utente
             {                
                 tmp += lista.ElementAt(i).getNome() + ";";                
             }
-            tmp += n + ";" + c + ";" + cl+"\n";
+            tmp += n + ";" + c + ";" + cl;
+            setOrdinazione(tmp);
+            tmp += "\n";
             return tmp;
         }
+        public void setOrdinazione(string t)
+        {
+            ordinazione = t;
+        }
+        public string getOrdinazione()
+        {
+            return ordinazione;
+        }   
     }
 }

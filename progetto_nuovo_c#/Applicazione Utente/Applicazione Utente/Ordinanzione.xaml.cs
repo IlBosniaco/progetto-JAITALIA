@@ -49,7 +49,7 @@ namespace Applicazione_Utente
         {
             ordine.Salva(nome, cognome, classe);
             MessageBox.Show("ordine completato");
-            MainWindow tmp = new MainWindow(c);
+            FinestraQR tmp = new FinestraQR(ordine.getOrdinazione(), nome, cognome, classe);
             this.Hide();
             tmp.Show();
         }

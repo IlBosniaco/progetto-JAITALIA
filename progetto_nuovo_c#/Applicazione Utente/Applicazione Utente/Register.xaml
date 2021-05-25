@@ -17,6 +17,10 @@
         <PasswordBox x:Name="txtConferma" HorizontalAlignment="Left" Margin="289,262,0,0" VerticalAlignment="Top" Width="202" Height="24"/>
         <ComboBox x:Name="cmbSezione" HorizontalAlignment="Left" Margin="400,202,0,0" VerticalAlignment="Top" Width="91"/>
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="679*"/>
+                <ColumnDefinition Width="114*"/>
+            </Grid.ColumnDefinitions>
             <Button x:Name="btnAccedi1" Content="Accedi" HorizontalAlignment="Left" Margin="289,329,0,0" VerticalAlignment="Top" Width="202" Height="20" Click="btnAccedi_Click"/>
             <Button x:Name="btnRegistrati1" Content="Registrati" HorizontalAlignment="Left" Margin="289,304,0,0" VerticalAlignment="Top" Width="202" Height="20" Click="btnRegistrati_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="289,66,0,0" TextWrapping="Wrap" Text="Registrati" VerticalAlignment="Top" Height="40" Width="202"/>
