@@ -20,7 +20,7 @@ namespace Applicazione_Utente
     public partial class Ordinanzione : Window
     {
         Utenti c = new Utenti();
-        COrdine ordine = new COrdine();
+        COrdini ordine = new COrdini();
         public Ordinanzione()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace Applicazione_Utente
         public Ordinanzione(Utenti l)
         {
             InitializeComponent();
-            c = l;            
+            c = l;
         }
 
         private void btnOut_Click(object sender, RoutedEventArgs e)
@@ -51,50 +51,57 @@ namespace Applicazione_Utente
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             ordine.cancella(lst.SelectedIndex);
-            lst.ItemsSource = new List<string>();
-            lst.ItemsSource = ordine.getLista();
+            refreshList();
         }
 
         private void btnPa_Click(object sender, RoutedEventArgs e)
         {
-            ordine.aggiungi(btnPa.Content.ToString(), 2.5);
-            lst.ItemsSource = new List<string>();
-            lst.ItemsSource = ordine.getLista();
+            ordine.aggiungi(new COrdine(btnPa.Content.ToString(), 2.5));
+            refreshList();
         }
 
         private void btnPi_Click(object sender, RoutedEventArgs e)
         {
-            ordine.aggiungi(btnPi.Content.ToString(), 2);
-            lst.ItemsSource = new List<string>();
-            lst.ItemsSource = ordine.getLista();
+            ordine.aggiungi(new COrdine(btnPi.Content.ToString(), 2));
+            refreshList();
         }
 
         private void btnCr_Click(object sender, RoutedEventArgs e)
         {
-            ordine.aggiungi(btnCr.Content.ToString(), 0.70);
-            lst.ItemsSource = new List<string>();
-            lst.ItemsSource = ordine.getLista();
+            ordine.aggiungi(new COrdine(btnCr.Content.ToString(), 0.70));
+            refreshList();
         }
 
         private void btnGo_Click(object sender, RoutedEventArgs e)
         {
-            ordine.aggiungi(btnGo.Content.ToString(), 0.10);
-            lst.ItemsSource = new List<string>();
-            lst.ItemsSource = ordine.getLista();
+            ordine.aggiungi(new COrdine(btnGo.Content.ToString(), 0.10));
+            refreshList();
         }
 
         private void btnPa1_Click(object sender, RoutedEventArgs e)
         {
-            ordine.aggiungi(btnPa1.Content.ToString(), 0.80);
-            lst.ItemsSource = new List<string>();
-            lst.ItemsSource = ordine.getLista();
+            ordine.aggiungi(new COrdine(btnPa1.Content.ToString(), 0.80));
+            refreshList();
         }
 
         private void btnFo_Click(object sender, RoutedEventArgs e)
         {
-            ordine.aggiungi(btnFo.Content.ToString(), 1);
-            lst.ItemsSource = new List<string>();
-            lst.ItemsSource = ordine.getLista();
+            ordine.aggiungi(new COrdine(btnFo.Content.ToString(), 1));
+            refreshList();
+        }
+
+        public void refreshList()
+        {
+            lst.Items.Clear();
+            for(int i=0;i<ordine.getLista().Count;i++)
+            {
+                if(ordine.getLista().ElementAt(i).getNome().Length<9)
+                    lst.Items.Add(ordine.getLista().ElementAt(i).getNome() + "\t\t\t" + string.Format("{0:0.00}", ordine.getLista().ElementAt(i).getPrezzo()) +" €");
+                else
+                    lst.Items.Add(ordine.getLista().ElementAt(i).getNome() + "\t\t" + string.Format("{0:0.00}", ordine.getLista().ElementAt(i).getPrezzo()) + " €");
+
+            }
+            txtPrezzo.Text = "Totale: " + string.Format("{0:0.00}", ordine.getPrezzoTot()) + " €";
         }
     }
 }

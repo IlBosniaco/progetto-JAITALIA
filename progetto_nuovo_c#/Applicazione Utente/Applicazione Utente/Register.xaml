@@ -7,31 +7,14 @@
         mc:Ignorable="d"
         Title="Register" Height="450" Width="800">
     <Grid>
-        <Image Source="SfondoRistorante.png" Stretch="Fill" Margin="1,0,-1,0"/>
-
-        <Button x:Name="btnAccedi" Content="Accedi" HorizontalAlignment="Left" Margin="267,348,0,0" VerticalAlignment="Top" Width="244" Height="61" Click="btnAccedi_Click" Background="#FF00FF23"/>
-        <Button x:Name="btnRegistrati" Content="Registrati" HorizontalAlignment="Left" Margin="267,323,0,0" VerticalAlignment="Top" Width="244" Height="20" Click="btnRegistrati_Click" Background="#FF00FF23"/>
-        <TextBox x:Name="txtMail" HorizontalAlignment="Left" Height="23" Margin="267,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
-        <TextBlock HorizontalAlignment="Left" Margin="332,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="202" FontSize="20" FontFamily="{DynamicResource {x:Static SystemFonts.CaptionFontFamilyKey}}" TextDecorations="{x:Null}" FontWeight="Bold"><Run Text="Registrati"/></TextBlock>
-        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="267,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" RenderTransformOrigin="0.659,-0.186"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="267,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
-        <PasswordBox x:Name="txtPssw" HorizontalAlignment="Left" Margin="267,252,0,0" VerticalAlignment="Top" Width="244" Height="23"/>
-        <PasswordBox x:Name="txtConferma" HorizontalAlignment="Left" Margin="267,280,0,0" VerticalAlignment="Top" Width="244" Height="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="163,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="99" FontWeight="Bold" FontStyle="Italic" Background="#FF00FF23"><Run Text="Nome"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="163,196,0,0" TextWrapping="Wrap" Text="Cognome" VerticalAlignment="Top" Height="23" Width="99" FontWeight="Bold" FontStyle="Italic" Background="#FF00FF23"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" Height="23" Width="99" Margin="163,224,0,0" FontWeight="Bold" FontStyle="Italic" Background="#FF00FF23"/>
-        <TextBlock HorizontalAlignment="Left" Margin="163,252,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="23" Width="99" FontWeight="Bold" FontStyle="Italic" Background="#FF00FF23"/>
-        <TextBlock HorizontalAlignment="Left" Margin="163,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="99" FontWeight="Bold" FontStyle="Italic" Background="#FF00FF23"><Run Text="Conferma "/><LineBreak/><Run Text="Password"/><LineBreak/><Run/></TextBlock>
-        <Image Source="logo_nainsob.jpeg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="614,174,-104,183">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.992"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+        <Button x:Name="btnAccedi" Content="Accedi" HorizontalAlignment="Left" Margin="289,310,0,0" VerticalAlignment="Top" Width="202" Height="20" Click="btnAccedi_Click"/>
+        <Button x:Name="btnRegistrati" Content="Registrati" HorizontalAlignment="Left" Margin="289,285,0,0" VerticalAlignment="Top" Width="202" Height="20" Click="btnRegistrati_Click"/>
+        <TextBox x:Name="txtMail" HorizontalAlignment="Left" Height="23" Margin="289,174,0,0" TextWrapping="Wrap" Text="mail" VerticalAlignment="Top" Width="202"/>
+        <TextBlock HorizontalAlignment="Left" Margin="289,66,0,0" TextWrapping="Wrap" Text="Registrati" VerticalAlignment="Top" Height="40" Width="202"/>
+        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="385,146,0,0" TextWrapping="Wrap" Text="Cognome" VerticalAlignment="Top" Width="106" RenderTransformOrigin="0.659,-0.186"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="289,146,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="91"/>
+        <PasswordBox x:Name="txtPssw" HorizontalAlignment="Left" Margin="289,218,0,0" VerticalAlignment="Top" Width="202" Height="23"/>
+        <PasswordBox x:Name="txtConferma" HorizontalAlignment="Left" Margin="289,246,0,0" VerticalAlignment="Top" Width="202" Height="24"/>
 
     </Grid>
 </Window>

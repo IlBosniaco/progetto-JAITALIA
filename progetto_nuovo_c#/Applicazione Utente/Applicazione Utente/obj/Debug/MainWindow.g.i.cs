@@ -41,7 +41,7 @@ namespace Applicazione_Utente {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 12 "..\..\MainWindow.xaml"
+        #line 10 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnAccedi;
         
@@ -49,7 +49,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 13 "..\..\MainWindow.xaml"
+        #line 11 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnRegistrati;
         
@@ -57,7 +57,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 14 "..\..\MainWindow.xaml"
+        #line 12 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtMail;
         
@@ -65,7 +65,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 16 "..\..\MainWindow.xaml"
+        #line 14 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.PasswordBox txtPssw;
         
@@ -105,7 +105,7 @@ namespace Applicazione_Utente {
             case 1:
             this.btnAccedi = ((System.Windows.Controls.Button)(target));
             
-            #line 12 "..\..\MainWindow.xaml"
+            #line 10 "..\..\MainWindow.xaml"
             this.btnAccedi.Click += new System.Windows.RoutedEventHandler(this.btnAccedi_Click);
             
             #line default
@@ -114,7 +114,7 @@ namespace Applicazione_Utente {
             case 2:
             this.btnRegistrati = ((System.Windows.Controls.Button)(target));
             
-            #line 13 "..\..\MainWindow.xaml"
+            #line 11 "..\..\MainWindow.xaml"
             this.btnRegistrati.Click += new System.Windows.RoutedEventHandler(this.btnRegistrati_Click);
             
             #line default

@@ -7,25 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image Source="SfondoRistorante.png" Stretch="Fill"/>
-
-        <Button x:Name="btnAccedi" Content="Accedi" HorizontalAlignment="Left" Margin="237,211,0,0" VerticalAlignment="Top" Width="248" Click="btnAccedi_Click" Background="#FF00FF23" FontSize="18"/>
-        <Button x:Name="btnRegistrati" Content="Registrati" HorizontalAlignment="Left" Margin="237,253,0,0" VerticalAlignment="Top" Width="248" Click="btnRegistrati_Click" Background="#FF00FF23" FontSize="18"/>
-        <TextBox x:Name="txtMail" HorizontalAlignment="Left" Height="23" Margin="237,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
-        <TextBlock HorizontalAlignment="Left" Margin="324,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="218" FontSize="20" FontWeight="Bold"><Run Text="Login"/></TextBlock>
-        <PasswordBox x:Name="txtPssw" HorizontalAlignment="Left" Margin="237,171,0,0" VerticalAlignment="Top" Width="248" Height="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="149,143,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" Height="23" Width="83" FontSize="18" Background="#FF00FF23"/>
-        <TextBlock HorizontalAlignment="Left" Margin="149,171,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="24" Width="83" FontSize="18" Background="#FF00FF23"/>
-        <Image Source="logo_nainsob.jpeg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="618,169,-108,188">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.992"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+        <Button x:Name="btnAccedi" Content="Accedi" HorizontalAlignment="Left" Margin="263,211,0,0" VerticalAlignment="Top" Width="202" Click="btnAccedi_Click"/>
+        <Button x:Name="btnRegistrati" Content="Registrati" HorizontalAlignment="Left" Margin="263,253,0,0" VerticalAlignment="Top" Width="202" Click="btnRegistrati_Click"/>
+        <TextBox x:Name="txtMail" HorizontalAlignment="Left" Height="23" Margin="263,143,0,0" TextWrapping="Wrap" Text="mail" VerticalAlignment="Top" Width="202"/>
+        <TextBlock HorizontalAlignment="Left" Margin="263,59,0,0" TextWrapping="Wrap" Text="login" VerticalAlignment="Top" Height="40" Width="202"/>
+        <PasswordBox x:Name="txtPssw" HorizontalAlignment="Left" Margin="263,171,0,0" VerticalAlignment="Top" Width="202" Height="22"/>
 
     </Grid>
 </Window>

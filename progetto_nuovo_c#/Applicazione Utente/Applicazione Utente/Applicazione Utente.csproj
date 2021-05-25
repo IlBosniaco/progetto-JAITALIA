@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="COrdine.cs" />
+    <Compile Include="COrdini.cs" />
     <Compile Include="Utenti.cs" />
     <Compile Include="Utente.cs" />
     <Compile Include="Ordinanzione.xaml.cs">
@@ -110,30 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="SfondoRistorante.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="panzerotto1_5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="pizza.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="goleador.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="patatine.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="croccantelle.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="focaccia.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="logo_nainsob.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,7 +41,7 @@ namespace Applicazione_Utente {
     public partial class Register : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 12 "..\..\Register.xaml"
+        #line 10 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnAccedi;
         
@@ -49,7 +49,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 13 "..\..\Register.xaml"
+        #line 11 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnRegistrati;
         
@@ -57,7 +57,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 14 "..\..\Register.xaml"
+        #line 12 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtMail;
         
@@ -65,7 +65,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 16 "..\..\Register.xaml"
+        #line 14 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtCognome;
         
@@ -73,7 +73,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 17 "..\..\Register.xaml"
+        #line 15 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtNome;
         
@@ -81,7 +81,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 18 "..\..\Register.xaml"
+        #line 16 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.PasswordBox txtPssw;
         
@@ -89,7 +89,7 @@ namespace Applicazione_Utente {
         #line hidden
         
         
-        #line 19 "..\..\Register.xaml"
+        #line 17 "..\..\Register.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.PasswordBox txtConferma;
         
@@ -129,7 +129,7 @@ namespace Applicazione_Utente {
             case 1:
             this.btnAccedi = ((System.Windows.Controls.Button)(target));
             
-            #line 12 "..\..\Register.xaml"
+            #line 10 "..\..\Register.xaml"
             this.btnAccedi.Click += new System.Windows.RoutedEventHandler(this.btnAccedi_Click);
             
             #line default
@@ -138,7 +138,7 @@ namespace Applicazione_Utente {
             case 2:
             this.btnRegistrati = ((System.Windows.Controls.Button)(target));
             
-            #line 13 "..\..\Register.xaml"
+            #line 11 "..\..\Register.xaml"
             this.btnRegistrati.Click += new System.Windows.RoutedEventHandler(this.btnRegistrati_Click);
             
             #line default
