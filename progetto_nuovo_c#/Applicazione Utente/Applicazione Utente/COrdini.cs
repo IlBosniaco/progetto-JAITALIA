@@ -47,21 +47,19 @@ namespace Applicazione_Utente
             return tmp;
         }
 
-        public void Salva()
+        public void Salva(string n, string c, string cl)
         {
-            File.AppendAllText(@"C:\Users\Matteo\Desktop\Applicazione Utente\ordini.csv", ToCsv());
+            File.AppendAllText(@"C:\Users\Matteo\Desktop\Applicazione Utente\ordini.csv", ToCsv(n,c,cl));
         }
 
-        public string ToCsv()
+        public string ToCsv(string n, string c, string cl)
         {
             string tmp = "";
             for(int i=0;i<lista.Count;i++)
-            {
-                if(i != lista.Count-1)
-                    tmp += lista.ElementAt(i).getNome() + ";";
-                else
-                    tmp += lista.ElementAt(i).getNome() + "\n";
+            {                
+                tmp += lista.ElementAt(i).getNome() + ";";                
             }
+            tmp += n + ";" + c + ";" + cl+"\n";
             return tmp;
         }
     }

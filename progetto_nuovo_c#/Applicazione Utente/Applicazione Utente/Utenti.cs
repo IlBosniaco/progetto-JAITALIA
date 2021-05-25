@@ -74,20 +74,20 @@ namespace Applicazione_Utente
                 {
                     linea = linee[i];
                     string[] campi = linea.Split(';');
-                    pTemp = new Utente(campi[0], campi[1], campi[2], campi[3]);
+                    pTemp = new Utente(campi[0], campi[1], campi[2], campi[3], campi[4]);
                     lista.Add(pTemp);
                 }
             }
         }
         
-        public Utente controllo(string m, string p)
+        public int controllo(string m, string p)
         {
             for(int i=0;i<lista.Count;i++)
             {
                 if (lista.ElementAt(i).getMail() == m && lista.ElementAt(i).getPassword() == p)
-                    return lista.ElementAt(i);
+                    return i;
             }
-            return null;
+            return -1;
         }
 
         public bool controlloR(string m)

@@ -10,6 +10,7 @@ namespace Applicazione_Utente
     {
         string nome;
         string cognome;
+        string classe;
         string mail;
         string password;
 
@@ -17,14 +18,16 @@ namespace Applicazione_Utente
         {           
             nome = "";
             cognome = "";
+            classe = "";
             mail = "";
             password = "";
         }
 
-        public Utente(string n, string c, string m, string p)
+        public Utente(string n, string c,string cl, string m, string p)
         {
             nome = n;
             cognome = c;
+            classe = cl;
             mail = m;
             password = p;
         }
@@ -33,7 +36,7 @@ namespace Applicazione_Utente
         public string ToCsv()
         {
             string tmp = "";
-            tmp += nome + ";" + cognome + ";" + mail + ";" + password;         
+            tmp += nome + ";" + cognome + ";" + classe + ";" + mail + ";" + password;         
             return tmp;
         }
 
@@ -53,6 +56,11 @@ namespace Applicazione_Utente
         public string getPassword()
         {
             return password;
+        }
+
+        public string getClasse()
+        {
+            return classe;
         }
     }
 }

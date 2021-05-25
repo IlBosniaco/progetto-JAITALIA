@@ -21,15 +21,21 @@ namespace Applicazione_Utente
     {
         Utenti c = new Utenti();
         COrdini ordine = new COrdini();
+        string nome = "";
+        string cognome = "";
+        string classe = "";
         public Ordinanzione()
         {
             InitializeComponent();
         }
 
-        public Ordinanzione(Utenti l)
+        public Ordinanzione(Utenti l,int i)
         {
             InitializeComponent();
             c = l;
+            nome = c.getLista().ElementAt(i).getNome();
+            cognome = c.getLista().ElementAt(i).getCognome();
+            classe = c.getLista().ElementAt(i).getClasse();
         }
 
         private void btnOut_Click(object sender, RoutedEventArgs e)
@@ -41,7 +47,7 @@ namespace Applicazione_Utente
 
         private void btnOrdina_Click(object sender, RoutedEventArgs e)
         {
-            ordine.Salva();
+            ordine.Salva(nome, cognome, classe);
             MessageBox.Show("ordine completato");
             MainWindow tmp = new MainWindow(c);
             this.Hide();

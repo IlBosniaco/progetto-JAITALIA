@@ -37,9 +37,10 @@ namespace Applicazione_Utente
 
         private void btnAccedi_Click(object sender, RoutedEventArgs e)
         {
-            if (c.controllo(txtMail.Text, txtPssw.Password)!=null)
+            int i = c.controllo(txtMail.Text, txtPssw.Password);
+            if (i>=0)
             {
-                Ordinanzione tmp = new Ordinanzione(c);
+                Ordinanzione tmp = new Ordinanzione(c,i);
                 this.Hide();
                 tmp.Show();
             }

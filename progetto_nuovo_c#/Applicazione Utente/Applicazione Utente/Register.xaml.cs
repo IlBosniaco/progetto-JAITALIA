@@ -29,26 +29,41 @@ namespace Applicazione_Utente
         {
             InitializeComponent();
             c = t;
+            cmbAnno.Items.Add("1");
+            cmbAnno.Items.Add("2");
+            cmbAnno.Items.Add("3");
+            cmbAnno.Items.Add("4");
+            cmbAnno.Items.Add("5");
+            cmbSezione.Items.Add("A");
+            cmbSezione.Items.Add("B");
+            cmbSezione.Items.Add("C");
+            cmbSezione.Items.Add("D");
         }
 
         private void btnRegistrati_Click(object sender, RoutedEventArgs e)
         {
-            if(txtPssw.Password!=txtConferma.Password)
+            if (!(txtNome.Text == "" || txtCognome.Text == "" || cmbAnno.Text =="" || cmbSezione.Text=="" || txtMail.Text == "" || txtPssw.Password == "" || txtConferma.Password == ""))
             {
-                MessageBox.Show("la conferma è diversa dalla password inserita");
-            }
-            else if (c.controlloR(txtMail.Text))
-            {
-                Utente o = new Utente(txtNome.Text, txtCognome.Text, txtMail.Text, txtPssw.Password);
-                c.AggiungiUtente(o);
-                c.Salva();
-                MessageBox.Show("account creato");
-                Ordinanzione tmp = new Ordinanzione(c);
-                this.Hide();
-                tmp.Show();
+                if (txtPssw.Password != txtConferma.Password)
+                {
+                    MessageBox.Show("la conferma è diversa dalla password inserita");
+                }
+                else if (c.controlloR(txtMail.Text))
+                {
+                    Utente o = new Utente(txtNome.Text, txtCognome.Text, cmbAnno.Text + cmbSezione.Text, txtMail.Text, txtPssw.Password);
+                    c.AggiungiUtente(o);
+                    c.Salva();
+                    MessageBox.Show("account creato");
+                    Ordinanzione tmp = new Ordinanzione(c, c.getLista().Count-1);
+                    this.Hide();
+                    tmp.Show();
+                }
+                else
+                    MessageBox.Show("questa mail è già in uso");
             }
             else
-                MessageBox.Show("questa mail è già in uso");
+                MessageBox.Show("riempi tutti i campi");
+            
         }
 
         private void btnAccedi_Click(object sender, RoutedEventArgs e)
