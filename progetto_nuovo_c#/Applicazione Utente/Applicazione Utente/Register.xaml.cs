@@ -38,11 +38,17 @@ namespace Applicazione_Utente
             cmbSezione.Items.Add("B");
             cmbSezione.Items.Add("C");
             cmbSezione.Items.Add("D");
+            cmbIndirizzo.Items.Add("info");
+            cmbIndirizzo.Items.Add("mecc");
+            cmbIndirizzo.Items.Add("scie");
+            cmbIndirizzo.Items.Add("lice");
+            cmbIndirizzo.Items.Add("ling");
+            cmbIndirizzo.Items.Add("chim");
         }
 
         private void btnRegistrati_Click(object sender, RoutedEventArgs e)
         {
-            if (!(txtNome.Text == "" || txtCognome.Text == "" || cmbAnno.Text =="" || cmbSezione.Text=="" || txtMail.Text == "" || txtPssw.Password == "" || txtConferma.Password == ""))
+            if (!(txtNome.Text == "" || txtCognome.Text == "" || cmbAnno.Text =="" || cmbSezione.Text=="" || cmbIndirizzo.Text == "" || txtMail.Text == "" || txtPssw.Password == "" || txtConferma.Password == ""))
             {
                 if (txtPssw.Password != txtConferma.Password)
                 {
@@ -50,7 +56,7 @@ namespace Applicazione_Utente
                 }
                 else if (c.controlloR(txtMail.Text))
                 {
-                    Utente o = new Utente(txtNome.Text, txtCognome.Text, cmbAnno.Text + cmbSezione.Text, txtMail.Text, txtPssw.Password);
+                    Utente o = new Utente(txtNome.Text, txtCognome.Text, cmbAnno.Text + cmbSezione.Text+cmbIndirizzo.Text, txtMail.Text, txtPssw.Password);
                     c.AggiungiUtente(o);
                     c.Salva();
                     MessageBox.Show("account creato");

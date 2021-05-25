@@ -15,20 +15,20 @@
 
             <Image Source="SfondoRistorante.png" Stretch="Fill" Grid.ColumnSpan="2"/>
 
-            <ComboBox x:Name="cmbAnno" HorizontalAlignment="Left" Margin="289,202,0,0" VerticalAlignment="Top" Width="67"/>
-            <TextBlock HorizontalAlignment="Left" Margin="159,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="124" Background="#FF74FF00"><Run FontSize="18" Text="Cognome"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="159,121,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="21" Width="124" FontSize="18" Background="#FF74FF00"/>
-            <TextBlock HorizontalAlignment="Left" Margin="159,176,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Width="124" Height="24" Background="#FF74FF00" FontSize="18"/>
-            <TextBlock HorizontalAlignment="Left" Margin="159,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Background="#FF74FF00" Height="22" Text="Anno"/>
+            <ComboBox x:Name="cmbAnno" HorizontalAlignment="Left" Margin="289,202,0,0" VerticalAlignment="Top" Width="67" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Margin="159,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="124" Background="#FF74FF00"><Run FontSize="18" Text="Cognome"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="159,116,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="24" Width="124" FontSize="18" Background="#FF74FF00"/>
+            <TextBlock HorizontalAlignment="Left" Margin="159,176,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Width="124" Height="21" Background="#FF74FF00" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="159,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Background="#FF74FF00" Height="22"><Run Text="Anno"/><Run Text="/sezione/indirizzo"/></TextBlock>
             <TextBlock HorizontalAlignment="Left" Margin="159,229,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="27" Width="124" FontSize="18" Background="#FF74FF00"/>
             <TextBlock HorizontalAlignment="Left" Margin="159,261,0,0" TextWrapping="Wrap" Text="Conf. Password" VerticalAlignment="Top" Height="27" Width="124" FontSize="18" Background="#FF74FF00"/>
-            <TextBlock HorizontalAlignment="Left" Margin="356,202,0,0" TextWrapping="Wrap" Text="Sezione" VerticalAlignment="Top" Height="22" Width="64" Background="#FF74FF00"/>
+            <ComboBox x:Name="cmbIndirizzo" HorizontalAlignment="Left" Margin="428,202,0,0" VerticalAlignment="Top" Width="62" Height="22"/>
+            <ComboBox x:Name="cmbSezione" HorizontalAlignment="Left" Margin="361,202,0,0" VerticalAlignment="Top" Width="62" Height="22"/>
 
         </Grid>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="289,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" RenderTransformOrigin="0.441,1.609"/>
         <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="289,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" RenderTransformOrigin="0.659,-0.186"/>
         <TextBox x:Name="txtMail" HorizontalAlignment="Left" Height="23" Margin="289,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
-        <ComboBox x:Name="cmbSezione" HorizontalAlignment="Left" Margin="425,202,0,0" VerticalAlignment="Top" Width="66" Height="27"/>
         <Button x:Name="btnRegistrati" Content="Registrati" HorizontalAlignment="Left" Margin="289,304,0,0" VerticalAlignment="Top" Width="202" Height="40" Click="btnRegistrati_Click" Background="#FF74FF00" FontSize="18"/>
         <Button x:Name="btnAccedi" Content="Accedi" HorizontalAlignment="Left" Margin="289,349,0,0" VerticalAlignment="Top" Width="202" Height="40" Click="btnAccedi_Click" Background="#FF74FF00" FontSize="18"/>
         <PasswordBox x:Name="txtPssw" HorizontalAlignment="Left" Margin="289,234,0,0" VerticalAlignment="Top" Width="202" Height="23"/>

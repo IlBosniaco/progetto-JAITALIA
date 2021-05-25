@@ -36,6 +36,7 @@ namespace Applicazione_Utente
             nome = c.getLista().ElementAt(i).getNome();
             cognome = c.getLista().ElementAt(i).getCognome();
             classe = c.getLista().ElementAt(i).getClasse();
+            txtNome.Text = nome + " " + cognome + " " + classe;
         }
 
         private void btnOut_Click(object sender, RoutedEventArgs e)

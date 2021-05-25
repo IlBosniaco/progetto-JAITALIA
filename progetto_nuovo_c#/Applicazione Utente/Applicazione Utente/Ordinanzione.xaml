@@ -17,8 +17,8 @@
         <Button x:Name="btnPi" Content="pizza" HorizontalAlignment="Left" Margin="289,103,0,0" VerticalAlignment="Top" Width="130" Click="btnPi_Click" Background="#FF74FF00"/>
         <Button x:Name="btnPa1" Content="patatine" HorizontalAlignment="Left" Margin="65,326,0,0" VerticalAlignment="Top" Width="130" Click="btnPa1_Click" Background="#FF74FF00"/>
         <Button x:Name="btnOut" Content="log out" HorizontalAlignment="Left" Margin="909,10,0,0" VerticalAlignment="Top" Width="75" Click="btnOut_Click" Background="#FF74FF00"/>
-        <TextBlock HorizontalAlignment="Left" Margin="111,10,0,0" TextWrapping="Wrap" Text="lista ordinazioni" VerticalAlignment="Top" Width="308" Height="52" FontSize="40" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="489,74,0,0" TextWrapping="Wrap" Text="carrello" VerticalAlignment="Top" Background="#FF74FF00" Width="114" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="333,10,0,0" TextWrapping="Wrap" Text="lista ordinazioni" VerticalAlignment="Top" Width="308" Height="52" FontSize="40" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="489,74,0,0" TextWrapping="Wrap" Text="carrello" VerticalAlignment="Top" Background="#FF74FF00" Width="84" FontSize="18"/>
         <ListView x:Name="lst" HorizontalAlignment="Left" Height="317" Margin="489,103,0,0" VerticalAlignment="Top" Width="219" Grid.Column="1">
             <ListView.View>
                 <GridView>
@@ -26,7 +26,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBlock x:Name="txtPrezzo" HorizontalAlignment="Left" Margin="603,74,0,0" TextWrapping="Wrap" Text="totale:" VerticalAlignment="Top" Width="105" Background="#FF74FF00" FontSize="18"/>
+        <TextBlock x:Name="txtPrezzo" HorizontalAlignment="Left" Margin="573,74,0,0" TextWrapping="Wrap" Text="totale:" VerticalAlignment="Top" Width="135" Background="#FF74FF00" FontSize="18"/>
         <Button x:Name="btnOrdina" Content="ordina" HorizontalAlignment="Left" Margin="898,401,0,0" VerticalAlignment="Top" Width="86" Height="59" Click="btnOrdina_Click" Background="#FF74FF00"/>
         <Image Margin="310,243,592,148" Source="goleador.jpg" Stretch="Fill"/>
         <Image Margin="84,128,818,263" Source="panzerotto1_5.jpg" Stretch="Fill"/>
@@ -34,6 +34,7 @@
         <Image Margin="85,236,818,148" Source="croccantelle.jpg" Stretch="Fill"/>
         <Image Margin="85,351,818,24" Source="patatine.jpg" Stretch="Fill"/>
         <Image Margin="311,351,592,28" Source="focaccia.jpg" Stretch="Fill"/>
+        <TextBlock x:Name="txtNome" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="232" FontSize="20" FontWeight="Bold"/>
 
     </Grid>
 </Window>
