@@ -41,7 +41,7 @@ namespace WpfApp2 {
     public partial class Main : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 10 "..\..\Main.xaml"
+        #line 12 "..\..\Main.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnVisualizza;
         
@@ -49,7 +49,7 @@ namespace WpfApp2 {
         #line hidden
         
         
-        #line 11 "..\..\Main.xaml"
+        #line 13 "..\..\Main.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnScanerizza;
         
@@ -89,7 +89,7 @@ namespace WpfApp2 {
             case 1:
             this.btnVisualizza = ((System.Windows.Controls.Button)(target));
             
-            #line 10 "..\..\Main.xaml"
+            #line 12 "..\..\Main.xaml"
             this.btnVisualizza.Click += new System.Windows.RoutedEventHandler(this.btnVisualizza_Click);
             
             #line default
@@ -98,7 +98,7 @@ namespace WpfApp2 {
             case 2:
             this.btnScanerizza = ((System.Windows.Controls.Button)(target));
             
-            #line 11 "..\..\Main.xaml"
+            #line 13 "..\..\Main.xaml"
             this.btnScanerizza.Click += new System.Windows.RoutedEventHandler(this.btnScanerizza_Click);
             
             #line default

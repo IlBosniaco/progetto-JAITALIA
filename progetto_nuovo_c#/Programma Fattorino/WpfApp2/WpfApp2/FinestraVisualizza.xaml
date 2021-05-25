@@ -7,14 +7,20 @@
         mc:Ignorable="d"
         Title="FinestraVisualizza" Height="450" Width="800">
     <Grid>
-        <ListView x:Name="lstview" HorizontalAlignment="Left" Height="337" Margin="88,34,0,0" VerticalAlignment="Top" Width="351">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="739*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="SfondoRistorante.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+
+        <ListView x:Name="lstview" HorizontalAlignment="Left" Height="337" Margin="35,34,0,0" VerticalAlignment="Top" Width="351" Grid.Column="1">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="MAIN" HorizontalAlignment="Left" Margin="555,74,0,0" VerticalAlignment="Top" Width="108" Height="57" Click="btnIndietro_Click"/>
+        <Button Content="MAIN" HorizontalAlignment="Left" Margin="484,77,0,0" VerticalAlignment="Top" Width="165" Height="57" Click="btnIndietro_Click" Grid.Column="1" Background="#FF5DFF00" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
 </Window>

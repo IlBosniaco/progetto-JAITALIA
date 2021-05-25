@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="Main" Height="427.6" Width="505.6">
     <Grid>
-        <Button x:Name="btnVisualizza" Content="VISUALIZZA &#xD;&#xA;ORDINAZIONI" HorizontalAlignment="Left" Margin="178,80,0,0" VerticalAlignment="Top" Width="116" Height="50" Click="btnVisualizza_Click"/>
-        <Button x:Name="btnScanerizza" Content="SCANNERIZZA &#xD;&#xA;QR CODE" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" Width="116" Height="50" Click="btnScanerizza_Click"/>
+        <Image Source="SfondoRistorante.png" Stretch="Fill"/>
+
+        <Button x:Name="btnVisualizza" Content="VISUALIZZA &#xA;ORDINAZIONI" HorizontalAlignment="Left" Margin="160,113,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="btnVisualizza_Click" Background="#FF5DFF00" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnScanerizza" Content="SCANNERIZZA &#xA;QR CODE" HorizontalAlignment="Left" Margin="160,237,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="btnScanerizza_Click" Background="#FF5DFF00" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
 </Window>

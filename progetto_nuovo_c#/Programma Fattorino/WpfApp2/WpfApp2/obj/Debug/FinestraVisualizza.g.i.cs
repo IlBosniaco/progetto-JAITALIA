@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using QrWebCam;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -41,7 +42,7 @@ namespace WpfApp2 {
     public partial class FinestraVisualizza : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 10 "..\..\FinestraVisualizza.xaml"
+        #line 14 "..\..\FinestraVisualizza.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListView lstview;
         
@@ -83,7 +84,7 @@ namespace WpfApp2 {
             return;
             case 2:
             
-            #line 17 "..\..\FinestraVisualizza.xaml"
+            #line 21 "..\..\FinestraVisualizza.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btnIndietro_Click);
             
             #line default

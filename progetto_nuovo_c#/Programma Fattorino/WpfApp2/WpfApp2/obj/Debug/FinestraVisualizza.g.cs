@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using QrWebCam;
 using System;
 using System.Diagnostics;
 using System.Windows;
