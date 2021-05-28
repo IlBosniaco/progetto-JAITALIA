@@ -48,28 +48,40 @@ namespace Applicazione_Utente
 
         private void btnRegistrati_Click(object sender, RoutedEventArgs e)
         {
-            if (!(txtNome.Text == "" || txtCognome.Text == "" || cmbAnno.Text =="" || cmbSezione.Text=="" || cmbIndirizzo.Text == "" || txtMail.Text == "" || txtPssw.Password == "" || txtConferma.Password == ""))
+
+            if (!(txtNome.Text == "" || txtCognome.Text == "" || cmbAnno.Text == "" || cmbSezione.Text == "" || cmbIndirizzo.Text == "" || txtMail.Text == "" || txtPssw.Password == "" || txtConferma.Password == ""))
             {
-                if (txtPssw.Password != txtConferma.Password)
+                if (IsValidEmail(txtMail.Text))
                 {
-                    MessageBox.Show("la conferma è diversa dalla password inserita");
-                }
-                else if (c.controlloR(txtMail.Text))
-                {
-                    Utente o = new Utente(txtNome.Text, txtCognome.Text, cmbAnno.Text + cmbSezione.Text+cmbIndirizzo.Text, txtMail.Text, txtPssw.Password);
-                    c.AggiungiUtente(o);
-                    c.Salva();
-                    MessageBox.Show("account creato");
-                    Ordinanzione tmp = new Ordinanzione(c, c.getLista().Count-1);
-                    this.Hide();
-                    tmp.Show();
+                    if (txtPssw.Password.Length >= 8)
+                    {
+                        if (txtPssw.Password != txtConferma.Password)
+                        {
+                            MessageBox.Show("la conferma è diversa dalla password inserita");
+                        }
+                        else if (c.controlloR(txtMail.Text))
+                        {
+                            Utente o = new Utente(txtNome.Text, txtCognome.Text, cmbAnno.Text + cmbSezione.Text + cmbIndirizzo.Text, txtMail.Text, txtPssw.Password);
+                            c.AggiungiUtente(o);
+                            c.Salva();
+                            MessageBox.Show("account creato");
+                            Ordinanzione tmp = new Ordinanzione(c, c.getLista().Count - 1);
+                            this.Hide();
+                            tmp.Show();
+                        }
+                        else
+                            MessageBox.Show("questa mail è già in uso");
+                    }
+                    else
+                        MessageBox.Show("la password deve contenere almeno 8 caratteri");                   
                 }
                 else
-                    MessageBox.Show("questa mail è già in uso");
+                    MessageBox.Show("inserisci una mail valida");
             }
             else
                 MessageBox.Show("riempi tutti i campi");
-            
+
+
         }
 
         private void btnAccedi_Click(object sender, RoutedEventArgs e)
@@ -79,9 +91,17 @@ namespace Applicazione_Utente
             tmp.Show();
         }
 
-        private void txtMail_TextChanged(object sender, TextChangedEventArgs e)
+        bool IsValidEmail(string email)
         {
-
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

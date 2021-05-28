@@ -44,3 +44,26 @@ C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\bin\Debug\QRCode
 C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.g.cs
 C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.baml
 C:\Users\Matteo\Desktop\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.CopyComplete
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\Applicazione Utente.exe.config
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\Applicazione Utente.exe
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\Applicazione Utente.pdb
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\bin\Debug\QRCoder.dll
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csprojAssemblyReference.cache
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.g.cs
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\MainWindow.g.cs
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Ordinanzione.g.cs
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Register.g.cs
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\App.g.cs
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente_MarkupCompile.cache
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente_MarkupCompile.lref
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\FinestraQR.baml
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\MainWindow.baml
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Ordinanzione.baml
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Register.baml
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.g.resources
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione_Utente.Properties.Resources.resources
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.GenerateResource.cache
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.CoreCompileInputs.cache
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.csproj.CopyComplete
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.exe
+C:\Users\Matteo\Documents\progetto-JAITALIA\progetto_nuovo_c#\Applicazione Utente\Applicazione Utente\obj\Debug\Applicazione Utente.pdb
