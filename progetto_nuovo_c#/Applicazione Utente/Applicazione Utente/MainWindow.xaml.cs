@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Applicazione_Utente
 {
@@ -25,7 +26,7 @@ namespace Applicazione_Utente
         public MainWindow()
         {
             InitializeComponent();
-            c.setNomeFile(@"C:\Users\Matteo\Desktop\Applicazione Utente\dati.csv");
+            c.setNomeFile(Directory.GetCurrentDirectory()+@"\..\dati.csv");
             c.Carica();
         }
 

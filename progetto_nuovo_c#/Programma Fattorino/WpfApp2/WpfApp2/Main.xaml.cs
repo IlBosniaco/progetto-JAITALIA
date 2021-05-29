@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace WpfApp2
 {
@@ -23,7 +24,7 @@ namespace WpfApp2
         public Main()
         {
             InitializeComponent();
-            ordinazioni.setNomeFile(@"C:\Users\Matteo\Desktop\Applicazione Utente\ordini.csv");
+            ordinazioni.setNomeFile(Directory.GetCurrentDirectory()+ @"..\..\..\..\..\..\Applicazione Utente\Applicazione Utente\bin\ordini.csv");
             ordinazioni.CaricaFile();
         }
         public Main(COrdinazioni o)

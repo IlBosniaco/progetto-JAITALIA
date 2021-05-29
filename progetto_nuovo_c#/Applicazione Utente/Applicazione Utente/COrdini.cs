@@ -50,7 +50,7 @@ namespace Applicazione_Utente
 
         public void Salva(string n, string c, string cl)
         {
-            File.AppendAllText(@"C:\Users\Matteo\Desktop\Applicazione Utente\ordini.csv", ToCsv(n,c,cl));
+            File.AppendAllText(Directory.GetCurrentDirectory() + @"\..\ordini.csv", ToCsv(n,c,cl));
         }
 
         public string ToCsv(string n, string c, string cl)
