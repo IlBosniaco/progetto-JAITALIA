@@ -23,7 +23,7 @@ namespace WpfApp2
         public Main()
         {
             InitializeComponent();
-            ordinazioni.setNomeFile(@"E:\progetto_tecno\progetto_nuovo_c#\Applicazione Utente\ordini.csv");
+            ordinazioni.setNomeFile(@"C:\Users\Matteo\Desktop\Applicazione Utente\ordini.csv");
             ordinazioni.CaricaFile();
         }
         public Main(COrdinazioni o)

@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="Main" Height="427.6" Width="505.6">
+        Title="Main" Height="427.6" Width="375.119">
     <Grid>
-        <Image Source="SfondoRistorante.png" Stretch="Fill"/>
+        <Image Source="SfondoRistorante.png" Stretch="Fill" Margin="0,0,-0.8,-0.4"/>
 
-        <Button x:Name="btnVisualizza" Content="VISUALIZZA &#xA;ORDINAZIONI" HorizontalAlignment="Left" Margin="160,113,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="btnVisualizza_Click" Background="#FF5DFF00" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="btnScanerizza" Content="SCANNERIZZA &#xA;QR CODE" HorizontalAlignment="Left" Margin="160,237,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="btnScanerizza_Click" Background="#FF5DFF00" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnVisualizza" Content="VISUALIZZA &#xA;ORDINAZIONI" HorizontalAlignment="Left" Margin="103,86,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="btnVisualizza_Click" Background="#FF5DFF00" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnScanerizza" Content="SCANNERIZZA &#xA;QR CODE" HorizontalAlignment="Left" Margin="103,217,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="btnScanerizza_Click" Background="#FF5DFF00" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
 </Window>

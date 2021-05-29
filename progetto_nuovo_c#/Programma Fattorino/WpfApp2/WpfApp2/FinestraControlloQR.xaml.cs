@@ -58,7 +58,7 @@ namespace WpfApp2
         private void btnConferma_Click(object sender, RoutedEventArgs e)
         {
             bool trovato = false;
-            for (int i = 0; i < ordinazioni.numEl; i++)
+            for (int i = 0; i < ordinazioni.GetNumEl(); i++)
             {
                 if (ordinazioni.GetElemento(i) == qrBox.Text)
                 {

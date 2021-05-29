@@ -8,14 +8,14 @@
         mc:Ignorable="d"
         Title="FinestraControlloQR" Height="419.6" Width="356">
     <Grid x:Name="btnMain" Margin="0,0,3.6,-0.4">
-        <Image Margin="0,0,-9.6,0.4" Source="SfondoRistorante.png" Stretch="Fill" HorizontalAlignment="Left" Width="354"/>
+        <Image Source="SfondoRistorante.png" Stretch="Fill" Margin="0,0,0,-8"/>
 
         <ComboBox x:Name="camSelect" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Margin="259,37,10,332" Height="21" SelectionChanged="camSelect_SelectionChanged" Width="77" />
         <qwc:QrWebCamControl Loaded="Window_Loaded" x:Name="webCam" QrDecoded="QrWebCamControl_QrDecoded" Margin="17,63,10,157" />
-        <Button x:Name="btnMain1" Content="MAIN" HorizontalAlignment="Left" Margin="243,361,0,0" VerticalAlignment="Top" Width="75" Click="btnMain1_Click" Background="#FF2EFF00" FontSize="18"/>
-        <Button x:Name="btnConferma" Content="CONFERMA" HorizontalAlignment="Left" Margin="50,293,0,0" VerticalAlignment="Top" Width="105" Click="btnConferma_Click" Background="#FF3AFF00" FontSize="18"/>
-        <Label x:Name="lblConferma" Content="Label" HorizontalAlignment="Left" Margin="202,238,0,0" VerticalAlignment="Top" Height="50" Width="77" Background="#FF2EFF00" FontSize="18"/>
-        <TextBox x:Name="qrBox" HorizontalAlignment="Left" Height="24" Margin="50,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="btnMain1" Content="MAIN" HorizontalAlignment="Left" Margin="243,361,0,0" VerticalAlignment="Top" Width="75" Click="btnMain1_Click" Background="#FF00FF03"/>
+        <Button x:Name="btnConferma" Content="CONFERMA" HorizontalAlignment="Left" Margin="50,338,0,0" VerticalAlignment="Top" Width="94" Click="btnConferma_Click" Height="37" Background="#FF04F707"/>
+        <Label x:Name="lblConferma" Content="" HorizontalAlignment="Left" Margin="170,262,0,0" VerticalAlignment="Top" Height="39" Width="148" Background="#FF00FF03"/>
+        <TextBox x:Name="qrBox" HorizontalAlignment="Left" Height="20" Margin="50,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
 
     </Grid>
 </Window>
